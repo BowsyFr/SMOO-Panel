@@ -14,7 +14,7 @@ module.exports = {
             host: "141.253.115.12",
             port: 22,
             username: "ubuntu",
-            privateKey: fs.readFileSync("/Users/bowsy/Downloads/ssh-key-2025-05-24.key"),
+            privateKey: process.env.SSH_PRIVATE_KEY.replace(/\\n/g, "\n"),
         };
 
         try {
