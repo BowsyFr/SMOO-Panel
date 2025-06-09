@@ -22,7 +22,7 @@ const VALID_KINGDOMS = {
 };
 
 module.exports = {
-    name: "game",
+    name: "hns",
     description: "Gère la partie en cours",
     permission: "no",
     dm: true,
@@ -43,8 +43,8 @@ module.exports = {
         },
         {
             type: "string",
-            name: "team",
-            description: "Choisissez la team qui sera chasseur",
+            name: "player",
+            description: "Choisissez le",
             required: true,
             autocomplete: true
         },
@@ -92,4 +92,4 @@ module.exports = {
             interaction.reply({ content: `Option inconnue : ${option}`, ephemeral: true });
         }
     }
-}; 
+};
